@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南万茶 - 自然的馈赠</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2327ae60' fill-opacity='0.2'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'/%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.93 50.07l-3.54 3.54a20 20 0 0 0 20.68-20.68zm-5.66 5.66a10 10 0 0 1-14.14 0 10 10 0 0 1 0-14.14 10 10 0 0 1 14.14 0 10 10 0 0 1 0 14.14z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .content-wrapper {
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .carousel-item {
+            height: 80vh;
+        }
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            filter: brightness(0.8);
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #27ae60;
+            border-color: #27ae60;
+        }
+        .btn-primary:hover {
+            background-color: #2ecc71;
+            border-color: #2ecc71;
+        }
+        .pattern-bg {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0f2e9' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">南万茶</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">关于南万茶</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">特色</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/tea-plantation-1.jpg" class="d-block w-100" alt="南万茶种植地1">
+                    <div class="carousel-caption">
+                        <h2>欢迎品鉴南万茶</h2>
+                        <p>来自大自然的馈赠，纯净、清香</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/tea-plantation-2.jpg" class="d-block w-100" alt="南万茶种植地2">
+                    <div class="carousel-caption">
+                        <h2>优质茶叶的摇篮</h2>
+                        <p>独特的地理环境，孕育出卓越品质</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/tea-plantation-3.jpg" class="d-block w-100" alt="南万茶种植地3">
+                    <div class="carousel-caption">
+                        <h2>传统与现代的完美融合</h2>
+                        <p>匠心制茶，只为呈现最佳口感</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/tea-plantation-4.jpg" class="d-block w-100" alt="南万茶种植地4">
+                    <div class="carousel-caption">
+                        <h2>茶香四溢，韵味悠长</h2>
+                        <p>每一口都是对自然的礼赞</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+
+        <div class="pattern-bg" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h2 class="section-title">关于南万茶</h2>
+                        <p>南万茶源自中国茶叶的发源地，拥有悠久的历史和独特的制茶工艺。我们的茶园位于海拔1000米以上的高山地带，清新的空气和肥沃的土壤为茶叶的生长提供了得天独厚的条件。每一片茶叶都凝聚了大自然的精华和茶农的心血，为您带来纯正、醇厚的茶香体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5" id="features">
+            <h2 class="text-center section-title">南万茶的特色</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-leaf feature-icon"></i>
+                            <h5 class="card-title">纯天然有机</h5>
+                            <p class="card-text">采用有机种植方式，不使用任何化学肥料和农药，保证茶叶的纯净和安全。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mountain feature-icon"></i>
+                            <h5 class="card-title">高山云雾茶</h5>
+                            <p class="card-text">生长于高海拔地区，常年云雾缭绕，茶叶吸收了丰富的矿物质，口感独特。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hands feature-icon"></i>
+                            <h5 class="card-title">传统手工制作</h5>
+                            <p class="card-text">坚持传统手工制茶工艺，每一道工序都精心把控，确保茶叶品质的稳定性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pattern-bg" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="text-center section-title">联系我们</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">姓名</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">电子邮箱</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">留言</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">发送</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-light mt-5 py-3">
+            <div class="container text-center">
+                <p>&copy; 2023 南万茶. 保留所有权利。</p>
+                <a href="#" id="back-to-top" class="btn btn-primary">返回顶部</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>
